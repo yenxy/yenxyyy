@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Message For You</title>
+</head>
+<body>
+
+<script>
+    function greetUser() {
+        var name = prompt("Please enter your name:");
+        
+        if (name !== null) {
+            document.getElementById("greeting").innerHTML = "Love you, " + name + " <3";
+        }
+    }
+</script>
+
+<h1>Little Message For You</h1>
+
+<button onclick="greetUser()">Click to Enter Name</button>
+
+<p id="greeting"></p>
+
+</body>
+</html>
